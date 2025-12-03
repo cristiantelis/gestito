@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GesturesLauncher"
+        android:textSize="20sp"
+        android:paddingBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnStartOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar overlay"/>
+
+    <Button
+        android:id="@+id/btnStopOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detener overlay"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grabar nuevo gesto"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/btnMappings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar mappings"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado: inactivo"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
