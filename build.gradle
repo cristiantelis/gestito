@@ -1,0 +1,18 @@
+// Project-level Gradle (Groovy)
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.4.2"
+        // No otros plugins necesarios
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
