@@ -18,6 +18,7 @@ import android.view.WindowManager
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.Toast
+import com.example.gestures.data.MappingRepository
 
 class GestureOverlayService : Service() {
 
@@ -83,7 +84,7 @@ class GestureOverlayService : Service() {
                 val best = predictions.maxByOrNull { p -> p.score }
                 if (best != null && best.score > 3.0) {
                     val name = best.name
-                    val action = GestureRepository.getActionForGesture(this, name)
+                    val action = MappingRepository.getActionForGesture(this, name)
                     if (action != null) {
                         GestureActions.performAction(this, action)
                         Toast.makeText(this, "Gesto: $name → $action", Toast.LENGTH_SHORT).show()
